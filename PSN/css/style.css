@@ -4,3 +4,17 @@ body {
   background: #D0D8D8;
   font-family: monospace;
 }
+
+/** HEADER **/
+#header-nav {
+  background-color: #ffffff;
+  border-radius: 0:
+  border: 0; 
+}
+
+#logo-img {
+  background: url('../images/logo.png') no-repeat center;
+  width: 527px;
+  height: 173px;
+  margin: 10px 15px 10px 0px;
+}

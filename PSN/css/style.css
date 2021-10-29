@@ -13,7 +13,7 @@ body {
 }
 
 #logo-img {
-  background: url('../images/logo.png') no-repeat center;
+  background: url('../images/logo.png') no-repeat;
   width: 527px;
   height: 150px;
   margin: 10px 15px 10px 0px;
@@ -61,7 +61,7 @@ body {
   padding-bottom: 0;
 }
 #phone div { /* We Deliver */
-  color: #557c3e;
+  color: black;
   text-align: right;
   padding-right: 15px;
 }
@@ -75,9 +75,81 @@ body {
 }
 /* END HEADER */
 
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #6c7070;
+}
+
+
+  #menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 5px 5px 5px #cccccc;
+}
+
+#menu-tile {
+  background: url("../images/menu-rezise.jpg") no-repeat;
+  background-position: center;
+}
+
+#specials-tile {
+  background: url("../images/specials-resize.jpg") no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  background-color: #a7abab;
+  color: #fff;
+  opacity: .8;
+}
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #a7abab;
+  border-top: 0;
+  opacity: 0.8;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: black;
+  font-size: .8em;
+  line-height: 1.8;
+}
+
+/* END FOOTER */
+
+/* END HOME PAGE */
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 
+  .container .jumbotron  {
+    background: url('../images/interior-1200.png') no-repeat;
+    height: 675px;
+
+  }
 }
 
 /********** Medium devices only **********/
@@ -90,10 +162,24 @@ body {
     margin: 10px 15px 10px 0px;
   }
   /* End Header */
+
+  .jumbotron {
+    background: url('../images/interior-992.png') no-repeat;
+    height: 558px;
+    box-shadow: 0 0 50px #6c7070;
+  }
+
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .container .jumbotron  {
+    background: url('../images/interior-768.png') no-repeat;
+    height: 432px;
+
+  }
+
 
 }
 
@@ -123,8 +209,8 @@ body {
     margin: 0 20px;
     padding: 10px;
     border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
+    background-color: #f7f1cb;
+    color: black;
   }
   #xs-deliver {
     margin-top: 5px;
@@ -133,6 +219,41 @@ body {
     text-transform: uppercase;
   }
   /* End Header */
+
+    /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+
+  }
+    #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
 
 }
 
